@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jbaldirdge.firstapp.MainActivity">
+
+    <TextView
+        android:id="@+id/henlo"
+        android:layout_width="53dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="427dp"
+        android:layout_marginLeft="82dp"
+        android:text="Henlo World"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="148dp"
+        android:layout_height="94dp"
+        android:onClick="getHenloWorldText"
+        android:text="Start"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="260dp"
+        android:layout_height="16dp"
+        android:max="0"
+        android:progress="24"
+        android:progressTint="@android:color/holo_blue_dark"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+</android.support.constraint.ConstraintLayout>
